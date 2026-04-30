@@ -127,7 +127,8 @@ Taskify/
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/Samaysrivastava/taskify.git
+git clone https://github.com/Samaysrivastava/Taskify-Full-Stack-Project-using-MERN-main.git
+
 cd taskify
 ```
 
