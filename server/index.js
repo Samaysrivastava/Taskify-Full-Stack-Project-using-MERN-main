@@ -1,7 +1,7 @@
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import dotenv from "dotenv";
-import express from "express";
+import express, { response } from "express";
 import morgan from "morgan";
 import { errorHandler, routeNotFound } from "./middleware/errorMiddleware.js";
 import routes from "./routes/index.js";
@@ -23,6 +23,9 @@ app.use(
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
+app.get('/', (req, res) => {
+    res.send("hello from server");
+});
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
